@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second Tp</title>
+</head>
+<body>
+    <section id="sign-in" style="padding: 30px; margin: 30px; width: 500px; border: 2px solid rgb(90, 198, 231);">
+        <form action="#" method="get">
+            <label for="nom"><string>Nom Complet </string><a style="color:red;">*</a>
+                <input type="text" id="nom" name="nom" placeholder="Ex: Mohamed Alami">
+            </label><br><br>
+
+            <label for="email">Adress Email <a style="color:red;">*</a>
+                <input type="email" id="email" name="email" placeholder="m.alami@exemple.ma"><br>
+            </label><br>
+
+            <label for="pwd">Mot de passe <a style="color:red;">*</a>
+                <input type="password" id="pwd" placeholder="**********">
+            </label><br><br>
+            <label for="city">Ville de résidence<br>
+                <input list="Cities" name="city" id="city" placeholder="Ex: Beni Mellal">
+            </label><br><br>
+            <datalist id="Cities">
+                <option value="Beni Mellal"></option>
+                <option value="Marackech">
+                <option value="Casablanca">
+                <option value="Rabat">
+                <option value="Fes">
+            </datalist>
+            <label for="message">Votre message</label><br>
+
+            <textarea id="message" placeholder="Ecrivez votre message ici..." cols="40" rows="6"></textarea><br>
+           
+            <input type="checkbox">J'accepte que mes données soient traitées selon les conditions du cours.</input>
+                <div class="dev">
+                                <input type="submit" value="Réinitialiser">
+            <input type="submit" value="Valider l'exemple" style="color: antiquewhite; background-color: blue;"><br>
+                </div>
+        </form>
+    </section>
+    <style>
+        .dev{
+            position: relative; 
+            color: white; 
+            font-size:large;
+            display: flex;
+            justify-content: end;
+            right:0px ;
+        }
+    </style>
+</body>
+</html>
